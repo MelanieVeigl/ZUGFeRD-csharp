@@ -2427,6 +2427,20 @@ namespace ZUGFeRD_Test
             Assert.AreEqual(desc.LineTotalAmount, 314.86m);
         } // !ShouldLoadCIIWithoutQdtNamespace()
 
+        [TestMethod]
+        public void ShouldLoadCiiXRechnung302Extension()
+        {
+            string path = @"..\..\..\..\demodata\xRechnung\xRechnung CII 302 extension.xml";
+            path = _makeSurePathIsCrossPlatformCompatible(path);
+
+            InvoiceDescriptor desc = InvoiceDescriptor.Load(path);
+
+            Assert.AreEqual(desc.Profile, Profile.XRechnung);
+            Assert.AreEqual(desc.Type, InvoiceType.Invoice);
+            Assert.AreEqual(desc.InvoiceNo, "123456XX");
+        } // !ShouldLoadCiiXRechnung302Extension()
+
+
 
         [TestMethod]
         public void TestDesignatedProductClassificationWithFullClassification()
