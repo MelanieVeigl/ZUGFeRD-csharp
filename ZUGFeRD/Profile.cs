@@ -121,6 +121,7 @@ namespace s2industries.ZUGFeRD
                 { "urn:cen.eu:en16931:2017#compliant#urn:xoev-de:kosit:standard:xrechnung_2.2", Profile.XRechnung },
                 { "urn:cen.eu:en16931:2017#compliant#urn:xoev-de:kosit:standard:xrechnung_2.3", Profile.XRechnung },
                 { "urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0", Profile.XRechnung },
+                { "urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0#conformant#urn:xeinkauf.de:kosit:extension:xrechnung_3.0", Profile.XRechnung },
                 { "urn.cpro.gouv.fr:1p0:ereporting", Profile.EReporting }
             };
 
